@@ -7,7 +7,7 @@ This repo contains the notebooks and code used to analyze time‑varying relatio
 ## Repo layout
 
 ```
-your-repo/
+DAT490 Final Project/
   notebooks/
     Data_Cleaning.ipynb
     EDA.ipynb
