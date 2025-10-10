@@ -9,13 +9,13 @@ This repo contains the notebooks and code used to analyze time‑varying relatio
 ```
 your-repo/
   notebooks/
-    00_data_cleaning_and_connectedness.ipynb   # your uploaded "Data_Cleaning.ipynb"
-    01_data_eda.ipynb                          # your "EDA_Crypto,_Equities,_and_Gold.ipynb"
-    02_modeling.ipynb                          # (optional) GARCH/VAR/Wavelets
+    00_data_cleaning_and_connectedness.ipynb
+    01_data_eda.ipynb
+    02_modeling.ipynb
   data/
-    merged_returns.csv                         # or Stooq CSVs (btc_usd_d.csv, ^spx_d.csv, etc.)
-  figures/                                     # notebook outputs (PNG)
-  tables/                                      # notebook outputs (CSV/TeX)
+    merged_returns.csv
+  figures/
+  tables/
   README.md
   requirements.txt
   .gitignore
