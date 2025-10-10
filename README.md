@@ -4,7 +4,7 @@ This repo contains the notebooks and code used to analyze time‑varying relatio
 
 ---
 
-## 📁 Repo layout
+## Repo layout
 
 ```
 your-repo/
@@ -23,7 +23,7 @@ your-repo/
 
 ---
 
-## ▶️ Reproduce figures & tables (fast path)
+## Reproduce figures & tables
 
 **Google Colab**
 1. Open `notebooks/01_data_eda.ipynb` in Colab.
@@ -44,18 +44,16 @@ jupyter lab  # or jupyter notebook
 
 ---
 
-## 🧪 Modeling notebook (optional)
+## Modeling notebook
 
 Open `notebooks/02_modeling.ipynb` to fit:
 - **GARCH(1,1)** per asset (BTC, ETH, S&P, Dow) → saves `figures/*_garch_sigma.png`, `tables/garch_params.csv`
 - **VAR(p)** (AIC, Granger, IRFs) → saves `figures/var_impulse_responses.png`, `tables/var_summary.txt`
 - **Wavelets (DWT, db4)** → saves `figures/wavelet_energy.png`, `tables/wavelet_energy.csv`
 
-These outputs map to the Results and Appendix sections of the manuscript.
-
 ---
 
-## 📦 Data
+## Data
 
 You can work with **either**:
 - A single merged returns file: `data/merged_returns.csv` (must include `Date`, and columns for BTC & S&P returns such as `BTC_Close_Return`, `SPX_Close_Return`; if BTC returns are missing but you have `BTC_Close`, the EDA cell computes them).
@@ -65,7 +63,7 @@ If you cannot share data publicly, include a short `data/README.md` explaining h
 
 ---
 
-## 🧰 Environment
+## Environment
 
 Install once:
 ```bash
@@ -76,14 +74,8 @@ Libraries: `pandas`, `numpy`, `matplotlib`, `statsmodels`, `arch`, `PyWavelets`,
 
 ---
 
-## 🧩 Troubleshooting
+## Troubleshooting
 
 - **File not found**: Ensure `data/merged_returns.csv` (or Stooq CSVs) exist at the expected path. In Colab, create `/content/data/` and upload there.
 - **Different column names**: In the EDA export cell, set `BTC_RET_COL` and `SPX_RET_COL` to match your column names.
 - **Figures not appearing**: Make sure the notebook created `figures/` and `tables/` (the setup cell does this), and re‑run the final export cell.
-
----
-
-## 🔗 Code Appendix
-
-This repository is linked in the paper’s Code Appendix. It includes the notebooks and all figures/tables referenced in the manuscript.
