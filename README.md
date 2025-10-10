@@ -1,4 +1,4 @@
-# DAT 490 — Crypto & Equities (Notebook‑First Repo)
+# DAT 490 — Crypto & Equities
 
 This repo contains the notebooks and code used to analyze time‑varying relationships between cryptocurrencies (BTC, ETH) and U.S. equities (S&P 500, Dow), with optional gold. It matches the structure and filenames referenced in the final LaTeX manuscript.
 
